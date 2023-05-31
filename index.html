@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heroes</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+      integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="bg-cian">
+      <div class="max-width-1200 mx-auto"><p>Descuentos 20%</p></div>
+    </header>
+
+    <div class="box-fixed" id="banner">
+      <div class="max-width-1200">
+        <h1>Heroes</h1>
+      </div>
+    </div>
+
+    <main class="max-width-1200">
+      <div class="container-heroes py-125">
+        <div class="box-heroe">
+          <picture class="box-center background-batman">
+            <i class="fa fa-solid fa-heart text-red"></i>
+            <img src="./img/batman.png" alt="Batman" />
+          </picture>
+          <div class="box-heroe-main">
+            <h2>BATMAN</h2>
+            <p>
+              Bruce Wayne es el único personaje que se identifica como Batman y
+              aparece en Batman, Detective Comics, Batman y Robin, y Batman: The
+              Dark Knight. Dick Grayson vuelve al manto de Nightwing
+            </p>
+            <button>Ver más</button>
+          </div>
+        </div>
+
+        <div class="box-heroe">
+          <picture class="box-center background-harley">
+            <i class="fa fa-solid fa-heart text-red"></i>
+            <img src="./img/harley.png" alt="Harley Quinn" />
+          </picture>
+
+          <div class="box-heroe-main">
+            <h2>Harley Quinn</h2>
+            <p>
+              La creación de Harley Quinn fue una idea de último minuto
+              propuesta por el escritor estadounidense Paul Dini para modificar
+              una escena del vigésimo-segundo episodio de Batman: la serie
+              animada
+            </p>
+            <button>Ver más</button>
+          </div>
+        </div>
+
+        <div class="box-heroe">
+          <picture class="box-center background-batman">
+            <i class="fa fa-solid fa-heart fa-xl text-red"></i>
+            <img src="./img/batman.png" alt="Batman" />
+          </picture>
+          <div class="box-heroe-main">
+            <h2>BATMAN</h2>
+            <p>
+              Bruce Wayne es el único personaje que se identifica como Batman y
+              aparece en Batman, Detective Comics, Batman y Robin, y Batman: The
+              Dark Knight. Dick Grayson vuelve al manto de Nightwing
+            </p>
+            <button>Ver más</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="max-width-1200">
+        <p>Todos los derechos reservados a FRONT END 1</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const addClassTop = (event) => {
+      const scroll = window.scrollY;
+
+      if (scroll > 25) {
+        this.document.getElementById("banner").classList.add("top");
+        return;
+      }
+      this.document.getElementById("banner").classList.remove("top");
+    };
+    window.addEventListener("scroll", (event) => addClassTop(event));
+  </script>
+</html>
