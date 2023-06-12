@@ -17,41 +17,112 @@
       integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="bg-cian">
-      <div class="max-width-1200 mx-auto"><p>Descuentos 20%</p></div>
+    <header class="box-banner">
+      <div class="max-width-1200">
+        <p>Descuentos 20%</p>
+      </div>
     </header>
 
     <div class="box-fixed" id="banner">
       <div class="max-width-1200">
-        <h1>Heroes</h1>
+        <h1>
+          <span class="title-desktop">Heroes</span>
+          <span class="title-mobile">Card Super Heroes</span>
+        </h1>
       </div>
     </div>
 
     <main class="max-width-1200">
-      <div class="container-heroes py-125">
-        <div class="box-heroe">
+      <section class="container-heroes py-125">
+        <div class="box-heroe box-heroe__batman">
           <picture class="box-center background-batman">
             <i class="fa fa-solid fa-heart text-red"></i>
             <img src="./img/batman.png" alt="Batman" />
           </picture>
           <div class="box-heroe-main">
             <h2>BATMAN</h2>
-            <p>
+            <p class="text-desktop">
               Bruce Wayne es el único personaje que se identifica como Batman y
               aparece en Batman, Detective Comics, Batman y Robin, y Batman: The
               Dark Knight. Dick Grayson vuelve al manto de Nightwing
+            </p>
+            <p class="text-mobile">
+              Batman (conocido inicialmente como Bat-Man) es un personaje creado
+              por los estadounidenses Bob Kane y Bill Finger, y propiedad de DC
+              Comics. Apareció por primera vez en la historia titulada «El caso
+              del sindicato químico» de la revista Detective Comics N.º 27,
+              lanzada por la editorial National Publications el 30/3/1939.
             </p>
             <button>Ver más</button>
           </div>
         </div>
 
-        <div class="box-heroe">
+        <div class="box-heroe box-heroe__wonder-woman">
+          <picture class="box-center background-wonder-woman">
+            <i class="fa fa-solid fa-heart text-red"></i>
+            <img src="./img/wonder_woman.png" alt="MUJER MARAVILLA" />
+          </picture>
+
+          <div class="box-heroe-main">
+            <h2>MUJER MARAVILLA</h2>
+            <p>
+              Es una superheroína creada por William Moulton Marston para la
+              editorial DC Comics. Es una princesa guerrera de las Amazonas,
+              pueblo ficticio basado en el de las amazonas de la mitología
+              griega. En su tierra natal es conocida como la princesa Diana de
+              Temiscira pero fuera de esta utiliza la identidad secreta de Diana
+              Prince.
+            </p>
+            <button>Ver más</button>
+          </div>
+        </div>
+
+        <div class="box-heroe box-heroe__superman">
+          <picture class="box-center background-superman">
+            <i class="fa fa-solid fa-heart text-red"></i>
+            <img src="./img/superman.png" alt="SUPERMAN" class="img-desktop" />
+            <img
+              src="./img/superman_profile.png"
+              alt="SUPERMAN"
+              class="img-mobile"
+            />
+          </picture>
+
+          <div class="box-heroe-main">
+            <h2>SUPERMAN</h2>
+            <p>
+              Es un superhéroe que apareció por primera vez en los cómics
+              estadounidenses publicados por DC Comics. ​ El personaje fue
+              creado por el escritor estadounidense Jerry Siegel y el artista
+              canadiense Joe Shuster en 1933 cuando ambos se encontraban
+              viviendo en Cleveland, Ohio.
+            </p>
+            <button>Ver más</button>
+          </div>
+        </div>
+
+        <div class="box-heroe box-heroe__harley">
           <picture class="box-center background-harley">
             <i class="fa fa-solid fa-heart text-red"></i>
-            <img src="./img/harley.png" alt="Harley Quinn" />
+            <img
+              src="./img/harley.png"
+              alt="Harley Quinn"
+              class="img-desktop"
+            />
+            <img
+              src="./img/harley_profile.png"
+              alt="Harley Quinn"
+              class="img-mobile"
+            />
           </picture>
 
           <div class="box-heroe-main">
@@ -66,7 +137,7 @@
           </div>
         </div>
 
-        <div class="box-heroe">
+        <div class="box-heroe box-heroe__batman-second">
           <picture class="box-center background-batman">
             <i class="fa fa-solid fa-heart fa-xl text-red"></i>
             <img src="./img/batman.png" alt="Batman" />
@@ -81,11 +152,18 @@
             <button>Ver más</button>
           </div>
         </div>
-      </div>
+      </section>
     </main>
+
+    <button class="button-icon">
+      <i class="fa fa-solid fa-plus"></i>
+    </button>
+
     <footer>
-      <div class="max-width-1200">
+      <div class="max-width-1200 footer-container">
         <p>Todos los derechos reservados a FRONT END 1</p>
+
+        <img src="./img/github.png" alt="Github" />
       </div>
     </footer>
   </body>
